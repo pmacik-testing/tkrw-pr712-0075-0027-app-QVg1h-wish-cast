@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-dkpl
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr712-0075-0027-tenant/tkrw-pr712-0075-0027-app/devfile-sample-dkpl@sha256:0fd327496af79c3ca23050b73ca0552a95aaccec141696fb5972d0a0c86f5e8b
+        name: my-nodejs
+        resources: {}
+status: {}
